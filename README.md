@@ -24,6 +24,8 @@ on a Basys 3 FPGA using Vivado. The processor implements a classic
 ## Features
 - 5-stage pipeline architecture
 - Hazard detection unit
+- ALU built from low-level components (ripple carry adder, logical gates, shifters, multiplier)
+- Instruction and data memory
 
 ## Architecture
 -![Block Diagram]<img width="1404" height="706" alt="32-bit_Arch_BLK_Diagram" src="https://github.com/user-attachments/assets/d5225eb5-6abb-418b-b2dd-e0f61919d942" />
@@ -38,6 +40,20 @@ Fibonacci should be default test when repo is first copied
 Uncomment top instructions in InstructionMem for basic ALU operation Test
 -![ALU Waveform]<img width="1502" height="320" alt="ALU_Operation_Test" src="https://github.com/user-attachments/assets/820dfbca-55d5-4681-b0b9-772cb622bded" />
 
+## Testing
+Each major component was individually verified with its own testbench before full system integration:
+
+| Testbench                 | Component Tested           |
+|---------------------------|----------------------------|
+| `ALUTB.vhd`               | ALU operations             |
+| `RegFileTB.vhd`           | Register file read/write   |
+| `DataMemoryTB.vhd`        | Data memory                |
+| `MultiplierTB.vhd`        | Multiplier unit            |
+| `ExecuteStageTB.vhd`      | Execute pipeline stage     |
+| `MemoryStageTB.vhd`       | Memory pipeline stage      |
+| `WritebackStageTB.vhd`    | Writeback pipeline stage   |
+| `InstructionDecodeTB.vhd` | Instruction decode         |
+| `MIP_TB.vhd`              | Full processor integration |
 
 ## Tools & Hardware
 - **Language:** VHDL
