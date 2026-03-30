@@ -87,6 +87,7 @@ mips-processor-vhdl/
 ├── constraints/
 │   └── MicroProccessor_Constraints.xdc
 └── docs/
+    ├── block_diagram.png
     ├── ALU_FULL_Imple_waveform.png
     ├── ALU_operation_Test.png
     ├── Execute_stage_full_Imple_waveform.png
@@ -97,7 +98,6 @@ mips-processor-vhdl/
     ├── post-implementation_Fetcher.png
     ├── post_implementation_Decode.png
     └── writebackstage_behav.png
-​```
 ​```
 
 ## How to Run
