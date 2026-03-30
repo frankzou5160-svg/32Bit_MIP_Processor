@@ -46,7 +46,7 @@ Uncomment top instructions in InstructionMem for basic ALU operation Test
 - **Simulator:** Vivado Simulator 
 
 ## Project Structure
-​```
+```
 mips-processor-vhdl/
 ├── README.md
 ├── src/
@@ -98,7 +98,7 @@ mips-processor-vhdl/
     ├── post-implementation_Fetcher.png
     ├── post_implementation_Decode.png
     └── writebackstage_behav.png
-​```
+```
 
 ## How to Run
 1. Clone the repository
