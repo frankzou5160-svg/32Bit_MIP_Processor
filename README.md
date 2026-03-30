@@ -26,17 +26,17 @@ on a Basys 3 FPGA using Vivado. The processor implements a classic
 - Hazard detection unit
 
 ## Architecture
-![Block Diagram]<img width="1404" height="706" alt="32-bit_Arch_BLK_Diagram" src="https://github.com/user-attachments/assets/d5225eb5-6abb-418b-b2dd-e0f61919d942" />
+-![Block Diagram]<img width="1404" height="706" alt="32-bit_Arch_BLK_Diagram" src="https://github.com/user-attachments/assets/d5225eb5-6abb-418b-b2dd-e0f61919d942" />
 
 ## Simulation Results
 Processor tested using Vivado with a custom testbench 
 executing a sequence of MIPS instructions.
 
 Fibonacci should be default test when repo is first copied
-![Waveform]<img width="1509" height="318" alt="Fibonacci_Test" src="https://github.com/user-attachments/assets/c30eb234-909c-479f-9a50-0996d468476c" />
+-![Fibonacci Waveform]<img width="1509" height="318" alt="Fibonacci_Test" src="https://github.com/user-attachments/assets/c30eb234-909c-479f-9a50-0996d468476c" />
 
 Uncomment top instructions in InstructionMem for basic ALU operation Test
-![Waveform]<img width="1502" height="320" alt="ALU_Operation_Test" src="https://github.com/user-attachments/assets/820dfbca-55d5-4681-b0b9-772cb622bded" />
+-![ALU Waveform]<img width="1502" height="320" alt="ALU_Operation_Test" src="https://github.com/user-attachments/assets/820dfbca-55d5-4681-b0b9-772cb622bded" />
 
 
 ## Tools & Hardware
@@ -97,6 +97,7 @@ mips-processor-vhdl/
     ├── post-implementation_Fetcher.png
     ├── post_implementation_Decode.png
     └── writebackstage_behav.png
+​```
 ​```
 
 ## How to Run
